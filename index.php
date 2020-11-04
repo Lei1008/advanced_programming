@@ -1,6 +1,7 @@
 <?php
 
 class User{
+  
         public $name;
         public $username;
         public $email;
@@ -25,21 +26,22 @@ class User{
       }
 
       function add_friend($name){
-        echo $name ." Added a friend <br>";
+        echo $name." Added a Friend <br>";
       }
       function post_status($name){
-        echo $name ." Posted a status <br>";
+        echo $name." Posted a Status <br>";
       }
     }
 
-    $example = new User();
-    $example->set_name("Lailynette");
-    $example->set_email("llnyttburton08@gmail.com");
-    $example->set_username("Lei1008");
+    $output = new User();
 
-    echo "Name: " . $example->get_name() . "<br>";
-    echo "Username: " . $example->get_username() . "<br>";
-    echo "Email: " . $example->get_email() . "<br>";
+    $output->set_name("Lailynette");
+    $output->set_email("llnyttburton08@gmail.com");
+    $output->set_username("Lei1008");
 
-    $example->add_friend("<br>Lailynette");
-    $example->post_status("<br>Lailynette");
+    echo "Name: " . $output->get_name() . "<br>";
+    echo "Username: " . $output->get_username() . "<br>";
+    echo "Email: " . $output->get_email() . "<br>";
+
+    $output->add_friend("<br>Lailynette");
+    $output->post_status("<br>Lailynette");
